@@ -5,7 +5,8 @@ import HookTest from './component/HookTest'
 import ContextTest from './component/ContextTest'
 import ReduxTest from './component/ReduxTest'
 import {Provider} from 'react-redux'
-import store from './store'
+import index from './store/index'
+import RouteSimple from './component/RouteSimple'
 
 function App() {
 	return (
@@ -30,9 +31,12 @@ function App() {
 				{/*ContextTest*/}
 				{/*<ContextTest />*/}
 
-				<Provider store={store}>
-					<ReduxTest />
-				</Provider>
+
+				{/*<Provider store={index}>*/}
+					{/*<ReduxTest />*/}
+				{/*</Provider>*/}
+
+				<RouteSimple />
 			</header>
 		</div>
 	);
